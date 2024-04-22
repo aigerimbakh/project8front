@@ -1,4 +1,3 @@
-// NoticeForm.js
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addNotice } from '../redux/actions/noticeActions';

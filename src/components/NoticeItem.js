@@ -23,8 +23,7 @@ const NoticeItem = React.memo(({ index, notice, handleDelete, handleEdit, editIn
     </li>
   );
 }, (prevProps, nextProps) => {
-  // Эта функция сравнивает свойства предыдущих и следующих пропсов компонента.
-  // Возвращение true означает, что компонент не должен обновляться.
+ 
   return prevProps.notice === nextProps.notice && prevProps.editIndex === nextProps.editIndex;
 });
 

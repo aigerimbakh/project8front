@@ -1,12 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import App from './App';
+import store from './redux/store'; // Импортируем хранилище
+import * as serviceWorkerRegistration from './serviceWorkerRegistration'; // Импортируем serviceWorkerRegistration
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+ReactDOM.render(
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>,
+  document.getElementById('root')
 );
 
+serviceWorkerRegistration.register(); // Регистрируем сервисного работника

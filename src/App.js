@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './redux/store';
@@ -11,7 +10,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <div className="container">
-        <h1 className="heading">Notice Board</h1>
+        <h1 className="heading">Gg news</h1>
         <React.Suspense fallback={<div>Loading...</div>}>
           <NoticeForm />
           <NoticeList />

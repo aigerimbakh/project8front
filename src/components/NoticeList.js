@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteNotice } from '../redux/actions/noticeActions';
 import EditNoticeForm from './EditNoticeForm';
-import NoticeItem from './NoticeItem'; // Импортируем оптимизированный компонент
+import NoticeItem from './NoticeItem'; 
 import '../App.css';
 
 const NoticeList = () => {
@@ -23,7 +23,7 @@ const NoticeList = () => {
 
   return (
     <div className="notice-list-container">
-      <h2>Notice List</h2>
+      <h2>Новости</h2>
       <ul className="notice-list">
         {notices.map((notice, index) => (
           <NoticeItem
